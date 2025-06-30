@@ -1,0 +1,198 @@
+/* ==== Hintergrundfarbe der Seite ==== */
+body {
+  background-color: #FBF1E8;
+}
+
+/* ==== Start-Button (mit id) ==== */
+#btn-start {
+  background-color: #AA4E36 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+#btn-start:hover,
+#btn-start:focus {
+  background-color: #943e28 !important;
+  box-shadow: 0 0 0 0.25rem rgba(170, 78, 54, 0.4);
+}
+
+/* ==== Fortschrittsbalken ==== */
+.progress-bar {
+  background-color: #03045E !important;
+}
+
+/* ==== Zustimmung (Bootstrap: success) ==== */
+.btn-success,
+.bg-success,
+.alert-success {
+  background-color: #03045E !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #03045E !important;
+  box-shadow: 0 0 0 0.25rem rgba(3, 4, 94, 0.4); /* Korrigiert */
+}
+
+/* ==== Neutral (Bootstrap: warning) ==== */
+.btn-warning,
+.bg-warning,
+.alert-warning {
+  background-color: #98C0E3 !important;
+  color: #212529 !important;
+  border: 2px solid #fff !important;
+}
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: #98C0E3 !important;
+  box-shadow: 0 0 0 0.25rem rgba(152, 192, 227, 0.4); /* Korrigiert */
+}
+
+/* ==== Ablehnung (Bootstrap: danger) ==== */
+.btn-danger,
+.bg-danger,
+.alert-danger {
+  background-color: #AA4E36 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #AA4E36 !important;
+  box-shadow: 0 0 0 0.25rem rgba(170, 78, 54, 0.4);
+}
+
+/* ==== Doppelte Gewichtung ==== */
+.double-weighted,
+.double-weighted-badge {
+  background-color: #e6b400 !important;
+  color: #212529 !important;
+  font-weight: bold;
+}
+
+/* ==== Bewertungen in der Auswertung ==== */
+.result-user-choice {
+  background-color: #559E71 !important;
+  color: #fff !important;
+}
+.result-neutral {
+  background-color: #98C0E3 !important; /* Korrigiert */
+  color: #212529 !important;
+}
+.result-decline {
+  background-color: #AA4E36 !important;
+  color: #fff !important;
+}
+.result-double-weighted {
+  background-color: #e6b400 !important;
+  color: #212529 !important;
+  font-weight: bold;
+}
+
+/* ==== Box hinter dem Logo (.jumbotron) ==== */
+.jumbotron {
+  background-color: transparent !important;
+  border: 5px solid #36558F !important;
+}
+
+/* ==== Badges für Bewertung (HTML Klassen direkt) ==== */
+.badge.badge-success {
+  background-color: #03045E !important;
+  color: #fff !important;
+}
+
+.badge.badge-warning {
+  background-color: #98C0E3 !important; /* Korrigiert */
+  color: #fff !important;
+}
+
+.badge.badge-danger {
+  background-color: #AA4E36 !important;
+  color: #fff !important;
+}
+
+/* ==== Doppelte Gewichtung: Button und Ergebnisbereich (btn-info, bg-info) ==== */
+.btn-info,
+.bg-info,
+.result-detail-footer.bg-info {
+  background-color: #D7721E !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+/* ==== Ergebnisdarstellung: Balkenfarbe für "restliche" Punkte ==== */
+.remaining-progress-bar {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+/* ==== Entferne "Ergebnis"-Überschrift (h4) ==== */
+h4.result-detail-title,
+.result-detail-title {
+  display: none !important;
+}
+
+/* ==== Ergebnis: Text über Progressbar anordnen ==== */
+.col-12.col-md,
+.col-12.col-md-10 {
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+/* ==== Keine Zeilenumbrüche in card-body ==== */
+.card-body {
+  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+/* ==== Ergebnis: Balkenfarbe in Ergebniskarten ==== */
+.progress-bar.main.progress-bar {
+  background-color: #03045E !important;
+}
+
+/* ==== Mobile: Zeilenumbruch in card-body wieder aktivieren ==== */
+@media (max-width: 768px) {
+  .card-body {
+    white-space: normal !important;
+    overflow: visible;
+    text-overflow: unset;
+	color: black;
+  }
+}
+
+/* ==== Logo-Bild responsive machen ==== */
+.display-4.text-center.col-auto img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.card.result-detail-card .badge a {
+  pointer-events: none;
+  cursor: default;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.card-text.lead {
+  word-wrap: break-word !important;
+}
+
+.card-header.result-detail-header small {
+  font-weight: bold !important;
+}
+
+/* Klickverhalten optisch deaktivieren */
+.result-detail-header,
+.result-detail-footer {
+  cursor: default !important;
+}
+
+/* Icon in Header ausblenden */
+.result-detail-header svg {
+  display: none !important;
+}
